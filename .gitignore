@@ -1,0 +1,49 @@
+# -------------------------------------------------------------------
+# 1. Dependency / Package Manager Directories
+# -------------------------------------------------------------------
+# Node.js dependencies
+/node_modules
+
+# Python dependencies
+/venv
+/.venv
+
+# Ruby dependencies
+/vendor
+
+# -------------------------------------------------------------------
+# 2. Build Artifacts / Compiled Code
+# -------------------------------------------------------------------
+# Java bytecode
+*.class
+
+# C/C++ compiled objects
+*.o
+*.obj
+
+# Standard build output directory (e.g., from Webpack, React, Vite)
+/dist
+/build
+/out
+
+# -------------------------------------------------------------------
+# 3. Operating System / Editor Files
+# -------------------------------------------------------------------
+# macOS system files
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+
+# Visual Studio Code / JetBrains / Sublime Text temporary files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------------------------------------------------
+# 4. User-Specific / Credentials
+# -------------------------------------------------------------------
+# Environment variables (ALWAYS IGNORE)
+.env
+.env.*
