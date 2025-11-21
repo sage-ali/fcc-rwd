@@ -8,46 +8,114 @@
 </head>
 
 <body>
+  <header>
+    <h1 id="title">
+      freeCodeCamp Survey Form</h1>
+  </header>
 
-  freeCodeCamp Survey Form
-  Thank you for taking the time to help us improve the platform
+  <main class="main">
+    <p id="description"> Thank you for taking the time to help us improve the
+      platform
+    </p>
+    <form action="" id="survey-form">
+      <div class="input-name">
+        <label for="name" id="name-label"> Name
+        </label>
+        <input type="text" name="name" id="name" placeholder="Enter your name"
+          required>
+      </div>
+      <div class="input-email">
+        <label for="email" id="email-label"> Email
+        </label>
+        <input type="email" name="email" id="email"
+          placeholder="Enter your Email" required>
+      </div>
+      <div class="input-number">
+        <label for="number" id="number-label"> Age(optional)
+        </label>
+        <input type="number" name="number" id="number" min="18" max="99"
+          placeholder=" Age">
+      </div>
+      <div>
+        <label for="dropdown" id="role-dropdown-label">Which option best
+          describes
+          your current role?</label>
+        <select name="role-dropdown" id="dropdown">
+          <option value="" disabled selected>Select current role</option>
+          <option value="Student">Student</option>
+          <option value="Full time job">Full time job</option>
+          <option value="Part time job">Part time job</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
 
-  Name
-  Enter your name
-  Email
-  Enter your Email
-  Age(optional)
-  Age
-  Which option best describes your current role?
+      <div>
+        <input type="radio" name="radio" id="radio1" value="Definitely">
+        <label for="radio1" id="radio-label1"> Definitely</label>
+        <input type="radio" name="radio" id="radio2" value="Maybe">
+        <label for="radio2" id="radio-label2"> Maybe</label>
+        <input type="radio" name="radio" id="radio3" value="Not sure">
+        <label for="radio3" id="radio-label3"> Not sure</label>
+      </div>
+      <div>
+        <label for="fave-feat-dropdown" id="fave-feat-dropdown-label">What is
+          your favorite feature of freeCodeCamp?</label>
+        <select name="fave-feat-dropdown" id="fave-feat-dropdown">
+          <option value="" disabled selected>Select an option</option>
+          <option value="">Challenges</option>
+          <option value="">Projects</option>
+          <option value="">Community</option>
+          <option value="">Open Source</option>
+        </select>
+      </div>
+      <div>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input type="checkbox" name="checkbox" id="checkbox1"
+          value="Front-end Projects">
+        <label for="checkbox1" id="checkbox-label1">Front-end Projects</label>
+        <input type="checkbox" name="checkbox" id="checkbox2"
+          value="Back-end Projects">
+        <label for="checkbox2" id="checkbox-label2">Back-end Projects</label>
+        <input type="checkbox" name="checkbox" id="checkbox3"
+          value="Data Visualization">
+        <label for="checkbox3" id="checkbox-label3">Data Visualization</label>
+        <input type="checkbox" name="checkbox" id="checkbox4"
+          value="Challenges">
+        <label for="checkbox4" id="checkbox-label4">Challenges</label>
+        <input type="checkbox" name="checkbox" id="checkbox5"
+          value="Open Source Community">
+        <label for="checkbox5" id="checkbox-label5">Open Source
+          Community</label>
+        <input type="checkbox" name="checkbox" id="checkbox6"
+          value="Gitter help rooms">
+        <label for="checkbox6" id="checkbox-label6">Gitter help rooms</label>
+        <input type="checkbox" name="checkbox" id="checkbox7" value="Videos">
+        <label for="checkbox7" id="checkbox-label7">Videos</label>
+        <input type="checkbox" name="checkbox" id="checkbox8"
+          value="City Meetups">
+        <label for="checkbox8" id="checkbox-label8">City Meetups</label>
+        <input type="checkbox" name="checkbox" id="checkbox9" value="Wiki">
+        <label for="checkbox9" id="checkbox-label9">Wiki</label>
+        <input type="checkbox" name="checkbox" id="checkbox10" value="Forum">
+        <label for="checkbox10" id="checkbox-label10">Forum</label>
+        <input type="checkbox" name="checkbox" id="checkbox11"
+          value="Additional Courses">
+        <label for="checkbox11" id="checkbox-label11">Additional Courses</label>
+      </div>
 
 
-  Select current role
-  Would you recommend freeCodeCamp to a friend?
+      <div>
+        <label for="comments" id="comments-label">Any comments or
+          suggestions?</label>
+        <textarea name="comments" id="comments"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+      <button id="submit">Submit</button>
 
-  Definitely Maybe Not sure
-  What is your favorite feature of freeCodeCamp?
 
-
-  Select an option
-  What would you like to see improved? (Check all that apply)
-
-  Front-end Projects
-  Back-end
-  Projects
-  Data
-  Visualization
-  Challenges
-  Open Source Community
-  Gitter help rooms
-  Videos
-  City Meetups
-  Wiki
-  Forum
-  Additional Courses
-  Any comments or suggestions?
-
-  Enter your comment here...
-  Submit
+    </form>
+  </main>
 </body>
 
 </html>
