@@ -25,12 +25,6 @@ Build an app that is functionally similar to this example project. Try not to co
 16. You should use an attribute selector to target the first two descendants of `span` elements that have the word `two` as a part of their `class` value and set their `background-image` property to use a `linear-gradient`.
 17. You should use an attribute selector to target the three `span` elements that are descendants of `span` elements that have the word `three` as a part of their `class` value and set their `background-image` property to use a `linear-gradient`.
 
-Run the Tests (Ctrl + Enter)
-
-Reset this lesson
-
-Get Help
-
 Tests
 -----
 
