@@ -1,0 +1,52 @@
+/* Responsive web design setup */
+
+*, *::before, *::after {
+  box-sizing: border-box; /* Padding and border are included in the element's total width and height. */
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%; /* Prevents media from exceeding the width of its parent container. */
+  height: auto;    /* Ensures the image scales proportionally (maintains aspect ratio). */
+  display: block;  /* Removes a small amount of space often found below inline elements like images. */
+}
+
+/* Base styles */
+:root {
+  /* Colors */
+  --color-primary: #007bff;
+  --color-text: #333;
+
+  /* Typography */
+  --font-family-body: 'Times New Roman', serif;
+  --font-size-base: 16px;
+
+  /* Spacing Scale (based on 1rem = 10px) */
+  --space-xs: 0.4rem;  /* 4px */
+  --space-sm: 0.8rem;  /* 8px */
+  --space-md: 1.6rem;  /* 16px */
+  --space-20: 2.0rem;  /* 20px */
+  --space-lg: 3.2rem;  /* Example: 32px */
+  --space-xl: 4.8rem;  /* Example: 48px */
+}
+
+html {
+  font-size: 62.5%; /* This makes 1rem = 10px */
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+/* --- 1. BASE MOBILE STYLES (Default) --- */
+
+/* Layout */
+
+
+
+
+
+
+
+
