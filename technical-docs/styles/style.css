@@ -1,4 +1,4 @@
-/* Responsive web design setup */
+/* -- 0. Responsive web design setup */
 
 *,
 *::before,
@@ -24,6 +24,8 @@ svg {
 
   /* Typography */
   --font-family-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-family-heading: 'Open Sans', Arial, sans-serif;
+  --font-family-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-size-base: 1rem;
 
   /* Spacing Scale (based on 1rem = 10px) */
@@ -49,7 +51,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: var(--space-md); /* Use your spacing variable */
-  line-height: 1.1; /* Headings often have tighter line height than body text */
+  line-height: 1.5; /* Headings often have tighter line height than body text */
   font-family: var(--font-family-heading, var(--font-family-body)); /* Use a separate variable if desired */
   font-weight: bold;
 }
@@ -85,6 +87,20 @@ th {
   padding: var(--space-sm);
 }
 
+header {
+  padding: 0.5rem 0;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+
+}
+
 /* --- 1. BASE MOBILE STYLES (Default) --- */
 
 /* Layout */
@@ -95,3 +111,95 @@ th {
   padding: 0 1.5rem;
 }
 
+/* Component */
+#navbar header {
+  padding: 0;
+  margin: 1rem;
+}
+
+#navbar header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+nav.container {
+  height: auto;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  list-style: none;
+  overflow-y: auto;
+  border:1px solid rgba(0, 0, 0, 1);
+}
+
+#navbar li{
+ border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+#navbar a{
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+#main-doc {
+  padding-top: 1.5rem;
+}
+
+.main-section li {
+  margin: 1.5rem 0 0 2.25rem;
+}
+
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  font-family: var(--font-family-code);
+  line-height: 1.5;
+}
+
+.pl-2 {
+  padding-left: 1.5rem;
+}
+
+/* Utility Classes */
+
+/* State Styles */
+
+/* --- 2. Responsive Styles */
+
+@media screen and (min-width: 768px) {
+/* Layout */
+
+nav.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  border-right: 3px solid #ccc;
+  height: 100vh;
+}
+
+/* Component */
+#navbar ul {
+  max-height: unset;
+  max-width: 200px;
+  height: 80vh;
+  border: 0px;
+  overflow: auto;
+}
+
+#main-doc {
+  margin-left: 200px;
+}
+
+/* Utility Classes */
+
+/* State Styles */
+}
