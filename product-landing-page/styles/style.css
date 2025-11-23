@@ -1,0 +1,153 @@
+/* -- 0. Responsive web design setup */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Padding and border are included in the element's total width and height. */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%; /* Prevents media from exceeding the width of its parent container. */
+  height: auto; /* Ensures the image scales proportionally (maintains aspect ratio). */
+  display: block; /* Removes a small amount of space often found below inline elements like images. */
+}
+
+/* Base styles */
+:root {
+  /* Colors */
+  --color-primary: #007bff;
+  --color-text: #333;
+
+  /* Typography */
+  --font-family-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-family-heading: 'Open Sans', Arial, sans-serif;
+  --font-family-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-size-base: 1.6rem;
+
+  /* Spacing Scale (based on 1rem = 10px) */
+  --space-xs: 0.4rem; /* 4px */
+  --space-sm: 0.8rem; /* 8px */
+  --space-md: 1.6rem; /* 16px */
+  --space-20: 2rem; /* 20px */
+  --space-lg: 3.2rem; /* Example: 32px */
+  --space-xl: 4.8rem; /* Example: 48px */
+}
+
+/* Typeography */
+
+html {
+  font-size: 62.5%; /* This makes 1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: var(--space-md); /* Use your spacing variable */
+  line-height: 1.5; /* Headings often have tighter line height than body text */
+  font-family: var(--font-family-heading, var(--font-family-body)); /* Use a separate variable if desired */
+  font-weight: bold;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none; /* Remove default underline */
+  /* Add :hover styles later */
+}
+
+/* Layout */
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+}
+
+header {
+  padding: 0.5rem 0;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+
+}
+
+/* --- 1. BASE MOBILE STYLES (Default) --- */
+
+/* Layout */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Component */
+#navbar header {
+  padding: 0;
+  margin: 1rem;
+}
+
+#navbar header {
+  padding: 0;
+  margin: 0;
+}
+
+nav.container {
+  height: auto;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#navbar a{
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+#main-doc {
+  padding-top: 1rem;
+}
+
+.main-section li {
+  margin: 1.5rem 0 0 2.25rem;
+}
+
+
+
+/* Utility Classes */
+
+/* State Styles */
+
+/* --- 2. Responsive Styles */
+
+@media screen and (min-width: 768px) {
+/* Layout */
+
+
+/* Utility Classes */
+
+/* State Styles */
+}
