@@ -11,26 +11,111 @@
 </head>
 
 <body>
-  <nav id="navbar" class="container">
-    <header>
+  <header id="header">
+    <img
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+      alt="Original Trombones Logo" id="header-img">
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a>
+        </li>
+        <li><a href="#pricing" class="nav-link">Pricing</a>
+        </li>
 
-    </header>
-    <ul>
-      <li><a href="#" class="nav-link">nav link</a></li>
-      <li><a href="#" class="nav-link">nav link</a>
-      </li>
-      <li><a href="#" class="nav-link">nav link</a>
-      </li>
-
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </header>
   <main id="main-doc" class="container">
-    <section class="main-section" id="#">
-
+    <section id="hero">
+      <p>Handcrafted, home-made masterpieces</p>
+      <form action="https://www.freecodecamp.org/email-submit" id="form"><input
+          type="email" placeholder="Enter your email address" id="email"
+          required="required" name="email"><input type="submit"
+          value="Get Started" id="submit"></form>
+    </section>
+    <section id="features">
+      <div class="main-section">
+        <header>
+          <strong>Premium Materials</strong>
+        </header>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally. This
+          will increase the longevity of your purchase.
+        </p>
+      </div>
+      <div class="main-section">
+        <header>
+          <strong>Fast Shipping</strong>
+        </header>
+        <p>
+          We make sure you receive your trombone as soon as we have finished
+          making it. We also provide free returns if you are not satisfied.
+        </p>
+      </div>
+      <div class="main-section">
+        <header>
+          <strong>Quality Assurance</strong>
+        </header>
+        <p>
+          For every purchase you make, we will ensure that there are no
+          defects in the trombone. If there are, we will send you a new
+          trombone free of charge.
+        </p>
+      </div>
+    </section>
+    <section id="how-it-works">
+      <iframe src="" frameborder="0" id="video"></iframe>
+    </section>
+    <section id="pricing">
+      <div class="card">
+        <header class="product">Bass Trombone</header>
+        <p class="price">$900</p>
+        <ul class="features">
+          <li>Sound quality is unmatched</li>
+          <li>Best for professionals</li>
+          <li>Absolutely stunning</li>
+          <li>Durable and long lasting</li>
+        </ul>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <header class="product">Tenor Trombone</header>
+        <p class="price">$600</p>
+        <ul class="features">
+          <li>Good for beginners</li>
+          <li>Excellent sound quality</li>
+          <li>Great for Jazz Bands</li>
+          <li>ice and shiny</li>
+        </ul>
+        <button>Select</button>
+      </div>
+      <div class="card">
+        <header class="product">Valve Trombone</header>
+        <p class="price">$1200</p>
+        <ul class="features">
+          <li>Plays similar to a Trumpet</li>
+          <li>Great for Jazz Bands</li>
+          <li>Beautiful in sound and appearance</li>
+          <li>Just amazing</li>
+        </ul>
+        <button>Select</button>
+      </div>
     </section>
 
   </main>
   <footer>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link">Privacy</a></li>
+        <li><a href="#" class="nav-link">Terms</a>
+        </li>
+        <li><a href="#" class="nav-link">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+    <p>Copyright 2016, Original Trombones</p>
     <p>Created by <a href="https://github.com/sage-ali">sage-ali</a></p>
   </footer>
 </body>
