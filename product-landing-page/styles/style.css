@@ -219,7 +219,7 @@ nav ul {
   max-width: 300px;
   padding-bottom: var(--space-md);
 }
-#pricing .card header {
+#pricing .card h3 {
   background-color: #eee;
   padding: var(--space-md);
   font-size: 1.8rem;
