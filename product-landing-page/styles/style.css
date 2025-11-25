@@ -37,8 +37,8 @@ svg {
   --space-xl: 4.8rem; /* Example: 48px */
 
   /* variable values */
-  --navbar-height-svw: 150px;
-  --navbar-height-mvw: 120px;
+  --navbar-height-svw: 15rem;
+  --navbar-height-mvw: 12rem;
 }
 
 /* Typeography */
@@ -83,7 +83,7 @@ p {
 /* Layout */
 
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
@@ -112,7 +112,7 @@ section {
 
 #header-img {
   height: auto;
-  width: 300px;
+  width: 30rem;
 }
 
 nav ul {
@@ -144,7 +144,7 @@ nav ul {
 
 #hero form {
   width: 100%;
-  max-width: 400px;
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +201,7 @@ nav ul {
 
 #video {
   width: 100%;
-  max-width: 560px;
+  max-width: 56rem;
 }
 
 #pricing {
@@ -216,7 +216,7 @@ nav ul {
   border-radius: 4px;
   text-align: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 30rem;
   padding-bottom: var(--space-md);
 }
 #pricing .card h3 {
