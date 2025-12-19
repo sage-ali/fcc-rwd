@@ -31,9 +31,9 @@ For this lab, you start with the CSS and HTML already written for you. You will 
 12. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `\d+`, and no flag is checked, `stringToTest.innerHTML` should become `Gu<span class="highlight">1</span>n34 P1g5` by clicking the `testButton` button.
 13. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `\d+`, and the global flag is checked, `stringToTest.innerHTML` should become `Gu<span class="highlight">1</span>n<span class="highlight">34</span> P<span class="highlight">1</span>g<span class="highlight">5</span>` by clicking the `testButton` button.
 14. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `G`, and both the global and case insensitive flags are checked`stringToTest.innerHTML` should become `<span class="highlight">G</span>u1n34 P1<span class="highlight">g</span>5` by clicking the `testButton` button.
-15. When you click the `testButton` button, if the regex pattern matches the test string, the matched text should be surrounded by a `span` element with thclass of `highlight`.
+15. When you click the `testButton` button, if the regex pattern matches the test string, the matched text should be surrounded by a `span` element with the class of `highlight`.
 16. When there's no match, the test string shouldn't be modified.
-17. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `\d+`, and no flag is checked, the inner text of `#result` shoulbecome `1` by clicking the `testButton` button.
-18. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `\d+`, and the global flag is checked, the inner text of `#resultshould become`1, 34, 1, 5` by clicking the `testButton` button.
+17. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `\d+`, and no flag is checked, the inner text of `#result` should become `1` by clicking the `testButton` button.
+18. When the inner HTML of `stringToTest` is `Gu1n34 P1g5`, the value of `regexPattern` is `\d+`, and the global flag is checked, the inner text of `#result` should become 1, 34, 1, 5 by clicking the `testButton` button.
 19. When there's a match, the matched text should be displayed inside `#result`.
 20. When there's no match, the text `no match` should be displayed inside `#result`.
