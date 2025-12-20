@@ -1,0 +1,143 @@
+/* -- 0. Responsive web design setup */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Base styles */
+:root {
+  /* Colors */
+  --color-primary: rgb(236, 159, 25);
+  --color-text: #333;
+
+  /* Typography */
+  --font-family-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-family-heading: 'Open Sans', Arial, sans-serif;
+  --font-family-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-size-base: 1.6rem;
+
+  /* Spacing Scale (based on 1rem = 10px) */
+  --space-xs: 0.4rem; /* 4px */
+  --space-sm: 0.8rem; /* 8px */
+  --space-md: 1.6rem; /* 16px */
+  --space-20: 2rem; /* 20px */
+  --space-lg: 3.2rem; /* Example: 32px */
+  --space-xl: 4.8rem; /* Example: 48px */
+
+  /* variable values */
+  --navbar-height-svw: 15rem;
+  --navbar-height-mvw: 12rem;
+}
+
+/* Typeography */
+
+html {
+  font-size: 62.5%; /* This makes 1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: var(--space-md); /* Use your spacing variable */
+  line-height: 1.5; /* Headings often have tighter line height than body text */
+  font-family: var(--font-family-heading, var(--font-family-body)); /* Use a separate variable if desired */
+  font-weight: bold;
+}
+
+body {
+  font-family: var(--font-family-body);
+  padding: 2rem;
+  font-size: var(--font-size-base);
+}
+
+p {
+  padding: var(--padding-sm);
+}
+
+a {
+  text-decoration: none; /* Remove default underline */
+  /* Add :hover styles later */
+}
+
+/* Layout */
+
+/* --- 1. BASE MOBILE STYLES (Default) --- */
+
+/* Layout */
+
+h1 {
+  text-align: center;
+}
+
+#form {
+  max-width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+}
+
+input {
+  border-color: rgb(118, 118, 118);
+}
+
+#personal-info input,
+#product-info input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-color: rgb(118, 118, 118);
+}
+
+textarea {
+  width: 100%;
+  border-color: rgb(118, 118, 118);
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#submit-btn,
+#clear-btn {
+  margin: 10px 15px 0;
+}
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  font-size: x-large;
+  background-color: var(--dark-grey);
+}
+
+/* Utility Classes */
+
+/* State Styles */
+
+/* --- 2. Responsive Styles */
+
+/* Media queries for tablets and larger devices */
+
+@media (min-width: 550px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+}
