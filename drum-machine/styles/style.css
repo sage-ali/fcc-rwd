@@ -133,6 +133,25 @@ a {
   justify-content: center;
 }
 
+footer {
+  margin-top: var(--space-xl);
+  padding: var(--space-sm);
+  text-align: center;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: #177;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Layout */
 
 /* --- 1. BASE MOBILE STYLES (Default) --- */
