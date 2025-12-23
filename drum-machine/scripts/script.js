@@ -11,7 +11,7 @@ const playSound = function playSound(event) {
   let audio;
 
   // If the event is a click, find the closest drum pad element and select its corresponding audio element
-  if (event.type == 'click') {
+  if (event.type == 'click' && event.target.closest('.drum-pad')) {
     audio = event.target.closest('.drum-pad').querySelector('audio');
   }
 
@@ -25,8 +25,19 @@ const playSound = function playSound(event) {
     }
   }
   if (audio) {
+    // allows for rapid playback
+    audio.currentTime = 0;
     audio.play();
-    display.textContent = audio.id;
+
+    // more descriptive sound name
+    const pad = audio.parentElement;
+    display.textContent = pad.id;
+
+    // visual key press
+    pad.classList.add('active');
+    setTimeout(() => {
+      pad.classList.remove('active');
+    }, 100);
   }
 };
 
