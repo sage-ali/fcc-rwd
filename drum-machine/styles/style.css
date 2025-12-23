@@ -55,6 +55,13 @@ body {
   font-family: var(--font-family-body);
   padding: 2rem;
   font-size: var(--font-size-base);
+  /* Centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
 }
 
 p {
@@ -64,6 +71,66 @@ p {
 a {
   text-decoration: none; /* Remove default underline */
   /* Add :hover styles later */
+}
+
+/* Styles goes after here */
+
+/* Drum Machine Container */
+#drum-machine {
+  background-color: #333;
+  padding: var(--space-20);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-20);
+}
+
+/* Pad Bank (3x3 Grid) */
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+/* Drum Pads */
+.drum-pad {
+  background-color: var(--color-primary);
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--space-20);
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  transition: transform 0.1s, box-shadow 0.1s, background-color 0.1s;
+  user-select: none;
+  font-weight: bold;
+}
+
+.drum-pad:active, .drum-pad.active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background-color: #d88d16;
+}
+
+/* Display */
+#display {
+  background-color: #222;
+  color: white;
+  padding: var(--space-md);
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  font-family: var(--font-family-code);
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Layout */
