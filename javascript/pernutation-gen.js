@@ -1,4 +1,3 @@
-let counter = 0;
 function permuteString(string, pre = '', result = []) {
   if (string.length === 0) {
     result.push(pre);
@@ -9,7 +8,7 @@ function permuteString(string, pre = '', result = []) {
     const text = string.slice(0, i) + string.slice(i + 1);
     result = permuteString(text, pre + char, result);
   }
-  return result;
+  return Array.from(new Set(result));
 }
 
 console.log(permuteString('far'));
