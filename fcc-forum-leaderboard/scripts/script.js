@@ -1,0 +1,7 @@
+/* Utility functions */
+
+/* DOM ELEMENTS AND PROPERTIES */
+
+/* EVENT HANDLERS */
+
+/* ADDING EVENT LISTENERS */
