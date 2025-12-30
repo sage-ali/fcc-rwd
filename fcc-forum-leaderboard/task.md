@@ -30,17 +30,17 @@ In this lab, you will build a freeCodeCamp forum leaderboard that displays the l
 14. The `showLatestPosts` should extract the `users` and `topic_list` properties from the object passed as argument. Also, it should process the following properties of the objects from the `topics` array, which is contained in `topic_list`:
     * `id`: the id of the post
     * `title`: the title of the post
-    *`views`: the number of views of the post
+    * `views`: the number of views of the post
     * `posts_count`: the number of replies to the topic
-    *`slug`: the slug of the post
+    * `slug`: the slug of the post
     * `posters`: the posters for that topic
-    *`category_id`: an integer indicating the category id for the post
+    * `category_id`: an integer indicating the category id for the post
     * `bumped_at`: a timestamp in the ISO 8601 format
 15. The `showLatestPosts` should set the inner HTML of `#posts-container` to a string made by joining `tr` elements, one for each item in `topics`.
 16. Each `tr` element should have five `td` elements in it:
-    *a `td` containing two anchor elements, one with the class of `post-title`, an `href` of `<forumTopicUrl><slug>/<id>`, an anchor text of `<title>`, and one obtained by calling `forumCategory` with `category_id`.
+    * a `td` containing two anchor elements, one with the class of `post-title`, an `href` of `<forumTopicUrl><slug>/<id>`, an anchor text of `<title>`, and one obtained by calling `forumCategory` with `category_id`.
     * a `td` containing a `div` element with class `avatar-container` that contains the images returned by the `avatars` function called with `posters` and `users` as arguments.
-    *a `td` containing the number of replies to the post. _Hint:_ use `posts_count - 1`.
+    * a `td` containing the number of replies to the post. _Hint:_ use `posts_count - 1`.
     * a `td` containing the number of views of the post.
     * a `td` containing the time passed since the last activity.
 17. You should have an async function named `fetchData`.
